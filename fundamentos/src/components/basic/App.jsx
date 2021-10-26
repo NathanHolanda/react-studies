@@ -6,13 +6,18 @@ import RandNum from "./RandNum"
 import Card from "./../layout/Card"
 import Family from "./Family"
 import FamilyMember from './FamilyMember'
+import StudentsList from './StudentsList'
+import ProductsTable from './ProductsTable'
 
 export default () => {
     return (
         //short way to use Fragment
         <>
+            <Card title="#6 - Tabela" color="#080">
+                <ProductsTable></ProductsTable>
+            </Card>
             <Card title="#5 - Lista" color="#800">
-                
+                <StudentsList></StudentsList>
             </Card>
             <Card title="#4 - Família" color="#088">
                 <Family familyName="Alves">
