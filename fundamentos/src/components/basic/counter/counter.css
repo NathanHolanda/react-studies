@@ -1,0 +1,16 @@
+.plus, .less{
+    cursor:pointer;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 24px;
+    margin: 25px 10px 0 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #55e;
+    transition: transform 0.1s;
+}
+
+.plus:active, .less:active{
+    transform: scale(0.95, 0.95);
+}

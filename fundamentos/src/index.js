@@ -1,6 +1,6 @@
 import "./index.css"
 import ReactDOM from "react-dom"
-import App from "./components/basic/App"
+import App from "./App"
 
 /* const root = document.getElementById('root')
 ReactDOM.render('Olá mundo!', root) */

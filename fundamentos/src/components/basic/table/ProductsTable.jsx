@@ -1,6 +1,6 @@
 import React from 'react'
-import products from '../../data/products'
-import './style/productsTable.css'
+import products from '../../../data/products'
+import '../../style/productsTable.css'
 
 const rows = products.map(product => {
     const { id, name, price } = product
