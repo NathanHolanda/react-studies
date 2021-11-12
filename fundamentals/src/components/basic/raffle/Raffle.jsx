@@ -14,7 +14,7 @@ export default () => {
     const selectNumber = e => {
         let value = e.target.value
         if(e.target.checked){
-            selectedNumbers.push(value)
+            selectedNumbers.push(+value)
         }else{
             let i = selectedNumbers.indexOf(value)
             selectedNumbers.splice(i, 1)
@@ -30,10 +30,10 @@ export default () => {
 
             const randomNumbers = generateRandom()
 
-            let count = 0
+            let correctNumbers = 0
             randomNumbers.forEach(number => {
-                if(ticketNumbers.includes(number))
-                    count++
+                if(selectedNumbers.includes(number))
+                    correctNumbers++
             })
 
             const screen = document.getElementById('countdown')
@@ -41,7 +41,7 @@ export default () => {
                 screen.style.display = 'flex'
 
                 let count = 3
-                setInterval(() => {
+                let interval = setInterval(() => {
                     if(count > 1){
                         count--
                         setCountdownNumber(count)
@@ -53,17 +53,17 @@ export default () => {
                         let resultNumbers = randomNumbers.join('  ')
                         setResult(resultNumbers)
 
-                        if(count == 6){
+                        if(correctNumbers == 6){
                             setResultMsg('Parabéns! Você ganhou na MegaSena!')
                             setTypeMsg('success')
                         }else{
-                            setResultMsg(`Você acertou ${count} número(s). Infelizmente você não ganhou.`)
+                            setResultMsg(`Você acertou ${correctNumbers} número(s). Infelizmente você não ganhou.`)
                             setTypeMsg('danger')
                         }
-
-                        return
+                        clearInterval(interval)
                     }
                 }, 1000)
+                    
             }, 2000)
 
         }else{

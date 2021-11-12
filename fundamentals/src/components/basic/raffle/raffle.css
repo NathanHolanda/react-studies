@@ -55,7 +55,7 @@
     border: 2px dashed #444;
 }
 
-#ticket:focus{
+#result:focus, #ticket:focus{
     outline: none;
 }
 
