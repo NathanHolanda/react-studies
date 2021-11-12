@@ -1,0 +1,29 @@
+._card{
+    width: 400px;
+    max-height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+._card header{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 0;
+}
+
+._card main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 0 0 10px 10px;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 0;
+    flex-grow: 1;
+}

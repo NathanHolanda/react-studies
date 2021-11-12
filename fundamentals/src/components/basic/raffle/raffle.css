@@ -1,0 +1,87 @@
+.success{
+    color: #2a2;
+}
+
+.danger{
+    color: #f22;
+}
+
+.raffle-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+}
+
+.raffle-options{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.raffle-option{
+    font-size: 14px;
+    width: calc(100%/10);
+    display: flex;
+    flex-direction: column;
+}
+
+.raffle-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#choose-numbers{
+    cursor: pointer;
+    background-color: #383;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+#choose-numbers:active{
+    transform: scale(0.97, 0.97);
+}
+
+.ticket{
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    border: 2px dashed #444;
+}
+
+#ticket:focus{
+    outline: none;
+}
+
+.raffle-warn{
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.raffle-ticket{
+    margin-bottom: 15px;
+}
+
+.raffle-result{
+    display: none;
+}
+
+.countdown{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana;
+    font-size: 100px;
+    background-color: #fff;
+}
