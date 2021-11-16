@@ -1,0 +1,14 @@
+@font-face{
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Light.ttf');
+}
+
+body{
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  font-family: 'Roboto';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
