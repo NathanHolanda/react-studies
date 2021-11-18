@@ -1,0 +1,26 @@
+.menu{
+    flex-basis: 400px;
+    height: 100vh;
+    background-color: #69b;
+}
+
+.menu ul{
+    list-style-type: none;   
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu li{
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 10px 30px;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: #00000022;
+}
