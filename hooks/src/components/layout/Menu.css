@@ -12,6 +12,7 @@
 
 .Menu nav {
     flex-grow: 1;
+    min-height: 100vh;
 }
 
 .Menu ul {
